@@ -3,35 +3,45 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/style.css"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
   <title>Registration</title>
 </head>
 <body>
   <header class="header">
     <img src="images/ls_logo.png" class="logo" alt="Love School Logo"  />
-    <h1 class="title">Love School</h1>
+    <h2 class="title">Love School</h2>
     <button type="button" class="menu-btn">&#9776;</button>
   </header>
-  <h1 style="font-style:italic;font-family:fantasy;">Love School 💕</h1>
-  <p style="font-style:italic;font-family: cursive;font-weight:bold;">Love School is a platform designed to help people build genuine connections, meaningful friendships, and lasting relationships in a safe and welcoming environment.</p>
-  <form class="register" action="register-2.html">
+  <img src="images/ls_banner.png" class="banner" alt="Love School Banner"  />
+  <div class="reg-head">
+    <h6>Welcome to the Love School :<br>Registration Page!</h6>
+  </div>
+  <div class="reg-dscr">
+    <p>Every meaningful relationship begins with a simple introduction, and today could be the start of your own beautiful journey. By registering with Love School, you become part of a community dedicated to helping people build genuine connections based on trust, respect, and compatibility.</p>
+    <p>Please complete the registration form with accurate information to help us understand your preferences and create a profile that truly reflects who you are. Your privacy is important to us, and your personal information will be handled with care to provide you with a safe and enjoyable matchmaking experience.</p>
+    <p>We are excited to welcome you to Love School. Fill in your details, create your profile, and take the first step toward meeting someone who could make your story truly special.</p>
+    <p>Your perfect match may be just one click away! ❤️</p>
+  </div>
+  <form class="register" action="Register-2.html">
     <div class="form-header">
-      <h3>Register Here!</h3>
+      <h3>REGISTER HERE!</h3>
     </div>
     <div class="row">
-      <label for="name"><strong>Full Name:</strong></label>
+      <label for="name"><strong>FULL NAME:</strong></label>
       <input type="text" id="name" name="Full_Name" placeholder="Enter Your Full Name" required="">
     </div>
     <div class="row">
-      <label for="email"><strong>Enter E-Mail:</strong></label>
+      <label for="email"><strong>E-MAIL:</strong></label>
       <input type="email" id="email" name="Email" placeholder="Enter Your Mail ID" required="">
     </div>
     <div class="row">
-      <label for="dob"><strong>Date of Birth:</strong></label>
+      <label for="dob"><strong>DATE OF BIRTH:</strong></label>
       <input type="date" id="dob" name="dob" placeholder="Select Date of Birth" required="">
     </div>
     <div class="row">
-      <label><strong>Gender:</strong></label>
+      <label><strong>GENDER:</strong></label>
       <span class="gender-options">
         <input type="radio" id="male" name="gender" value="male" required="">
       <label for="male">Male</label>
@@ -40,7 +50,13 @@
       </span>
     </div>
     <div class="row">
-      <label for="looking"><strong>Looking For:</strong></label>
+      <label for="age"><strong>AGE:</strong></label>
+      <input type="range" min="0" max="100" value="25"
+       oninput="valueDisplay.textContent=this.value">
+      <span id="valueDisplay">25</span>
+    </div>
+    <div class="row">
+      <label for="looking"><strong>LOOKING FOR:</strong></label>
       <select id="looking" name="looking" required="">
         <option value="" selected disabled hidden="">What Are You Looking For?</option>
         <option value="Hangout">Hangout With Friends</option>
@@ -51,7 +67,7 @@
       </select>
     </div>
     <div class="row">
-      <label for="city"><strong>Current City:</strong></label>
+      <label for="city"><strong>CURRENT CITY:</strong></label>
       <input type="text" list="cities" id="city" name="city" required="">
       <datalist id="cities">
         <option value="Mumbai City">Mumbai City</option>
@@ -76,7 +92,7 @@
       </datalist>
     </div>
     <div class="row">
-      <label for="distance"><strong>Preferred Distance:</strong></label>
+      <label for="distance"><strong>DISTANCE:</strong></label>
       <select id="distance" name="distance" required="">
         <option value="" selected="" disabled="" hidden="">What Distance Do You Prefer</option>
         <option value="Same City">Same City</option>
@@ -87,5 +103,13 @@
     </div>
     <input type="submit" class="sbmt-dtl" value="Submit">
   </form>
+  <p class="login-rdr"><strong>Already Existing User?</strong><span><a href="First Project/login.html">Login Here</a></span></p>
+  <footer class="footer">
+    <h6>Contact Us:</h6>
+    <p>✉︎ support@loveschool.in</p>
+    <p>✆ +91 93266 11710</strong></p>
+    <pq>📍 Santacruz (E) Mumbai</p>
+  </footer>
 </body>
-</html>
+      </html>
+      
