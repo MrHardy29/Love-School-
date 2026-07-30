@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css"/>
+  <title>Registration</title>
+</head>
+<body>
+  <header class="header">
+    <img src="images/ls_logo.png" class="logo" alt="Love School Logo"  />
+    <h1 class="title">Love School</h1>
+    <button type="button" class="menu-btn">&#9776;</button>
+  </header>
+  <h1 style="font-style:italic;font-family:fantasy;">Love School 💕</h1>
+  <p style="font-style:italic;font-family: cursive;font-weight:bold;">Love School is a platform designed to help people build genuine connections, meaningful friendships, and lasting relationships in a safe and welcoming environment.</p>
+  <form class="register" action="register-2.html">
+    <div class="form-header">
+      <h3>Register Here!</h3>
+    </div>
+    <div class="row">
+      <label for="name"><strong>Full Name:</strong></label>
+      <input type="text" id="name" name="Full_Name" placeholder="Enter Your Full Name" required="">
+    </div>
+    <div class="row">
+      <label for="email"><strong>Enter E-Mail:</strong></label>
+      <input type="email" id="email" name="Email" placeholder="Enter Your Mail ID" required="">
+    </div>
+    <div class="row">
+      <label for="dob"><strong>Date of Birth:</strong></label>
+      <input type="date" id="dob" name="dob" placeholder="Select Date of Birth" required="">
+    </div>
+    <div class="row">
+      <label><strong>Gender:</strong></label>
+      <span class="gender-options">
+        <input type="radio" id="male" name="gender" value="male" required="">
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label>
+      </span>
+    </div>
+    <div class="row">
+      <label for="looking"><strong>Looking For:</strong></label>
+      <select id="looking" name="looking" required="">
+        <option value="" selected disabled hidden="">What Are You Looking For?</option>
+        <option value="Hangout">Hangout With Friends</option>
+        <option value="Dating">Dating</option>
+        <option value="Short Term">Short Term Relationship</option>
+        <option value="Long Term">Long Term Relationship</option>
+        <option value="Situationship">Situationship</option>
+      </select>
+    </div>
+    <div class="row">
+      <label for="city"><strong>Current City:</strong></label>
+      <input type="text" list="cities" id="city" name="city" required="">
+      <datalist id="cities">
+        <option value="Mumbai City">Mumbai City</option>
+        <option value="Mumbai Suburban">Mumbai Suburban</option>
+        <option value="Pune">Pune</option>
+        <option value="Nashik">Nashik</option>
+        <option value="Nanded">Nanded</option>
+        <option value="Nagpur">Nagpur</option>
+        <option value="Surat">Surat</option>
+        <option value="Ahmedabad">Ahmedabad</option>
+        <option value="Jaipur">Jaipur</option>
+        <option value="Lucknow">Lucknow</option>
+        <option value="Varanasi">Varanasi</option>
+        <option value="Delhi">Delhi</option>
+        <option value="Chandigarh">Chandigarh</option>
+        <option value="Kolkata">Kolkata</option>
+        <option value="Hyderabad">Hyderabad</option>
+        <option value="Vizag">Vizag</option>
+        <option value="Goa">Goa</option>
+        <option value="Bangalore">Bangalore</option>
+        <option value="Chennai">Chennai</option>
+      </datalist>
+    </div>
+    <div class="row">
+      <label for="distance"><strong>Preferred Distance:</strong></label>
+      <select id="distance" name="distance" required="">
+        <option value="" selected="" disabled="" hidden="">What Distance Do You Prefer</option>
+        <option value="Same City">Same City</option>
+        <option value="Same State">Same State</option>
+        <option value="Within India">Within India</option>
+        <option value="Anywhere">Anywhere</option>
+      </select>
+    </div>
+    <input type="submit" class="sbmt-dtl" value="Submit">
+  </form>
+</body>
+</html>
